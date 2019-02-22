@@ -1,5 +1,5 @@
 Git is a distributed version control system.
-Git is free software
+Git is free software distributed under the GPL
 
 git init  --- 初始化文件为本地仓库
 git add filename  --- 上传文件
