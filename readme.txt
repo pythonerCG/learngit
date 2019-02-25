@@ -25,4 +25,6 @@ git checkout -b dev -- 创建dev分支，然后切换到dev分支
   git checkout 命令加上-b 参数表示创建并切换，相当于一下两条命令：
     git branch dev
     git checkout dev
-git branch  -- 查看当前分支（当前分值会标一个*号） 
+git branch  -- 查看当前分支（当前分值会标一个*号）
+git merge + 分支名称  -- 用于合并指定分支到当前分支。
+git branch -d +分支名称  -- 删除分支 
