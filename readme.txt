@@ -20,4 +20,9 @@ git rm <filename>  -- 删除文件（删除工作区文件后需要git commit）
 git remote add origin git@github.com:pythonerCG/learngit.git  -- 把本地仓库的内容推送到GitHub仓库 （远程仓库的名字为origin,这是git默认的叫法）
 git push -u origin master -- git push 实际上是把当前分支master推送到远程。
   由于远程库是空的，我们第一次推送master分支时，加上了-u参数。
-git push origin master -- 只要本地坐了提交，就可以通过git push origin master 把本地 master分支的最新修改推送至GitHub。 
+git push origin master -- 只要本地坐了提交，就可以通过git push origin master 把本地 master分支的最新修改推送至GitHub。
+git checkout -b dev -- 创建dev分支，然后切换到dev分支
+  git checkout 命令加上-b 参数表示创建并切换，相当于一下两条命令：
+    git branch dev
+    git checkout dev
+git branch  -- 查看当前分支（当前分值会标一个*号） 
