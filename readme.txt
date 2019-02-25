@@ -10,3 +10,8 @@ git log  (--pretty=oneline)  --- 显示从最近到最远提交的日志
 git reset --hard HEAD^  --- 恢复到上一版本
 git reset --hard commit_id  --- 恢复到指定版本
 git reflog  --- 用来记录每次命令
+git checkout -- file  撤销修改
+   一种是 readme.txt 自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态
+   一种是 readme.txt 已经添加到暂存区后，又做了修改，现在，撤销修改就回到添加到暂存区后的状态。
+   总之，就是让这个文件回到最近一次git commit 或 git add时的状态
+   git checkout -- file 命令中的 -- 很重要， 没有 --，就变成了‘切换到另一个分支’的命令。 
