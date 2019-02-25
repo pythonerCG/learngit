@@ -17,4 +17,7 @@ git checkout -- file  撤销修改
    git checkout -- file 命令中的 -- 很重要， 没有 --，就变成了‘切换到另一个分支’的命令。
 git reset HEAD <filename> --可以把暂存区的修改撤销掉，重新放回工作区。
 git rm <filename>  -- 删除文件（删除工作区文件后需要git commit）
- 
+git remote add origin git@github.com:pythonerCG/learngit.git  -- 把本地仓库的内容推送到GitHub仓库 （远程仓库的名字为origin,这是git默认的叫法）
+git push -u origin master -- git push 实际上是把当前分支master推送到远程。
+  由于远程库是空的，我们第一次推送master分支时，加上了-u参数。
+git push origin master -- 只要本地坐了提交，就可以通过git push origin master 把本地 master分支的最新修改推送至GitHub。 
